@@ -46,7 +46,7 @@ T.get('statuses/user_timeline', params, function(err, data, response) {
     T.post('statuses/update', {status: quotes.start(useUpperCase).end(stopAfter139Chars).process() + '.'},  function(error, tweet, response) {
       if(error) throw error;
       console.log(tweet);  // Tweet body. 
-      console.log(response);  // Raw response object. 
+      // console.log(response);  // Raw response object. 
     });
 } else {
     console.log(err);
