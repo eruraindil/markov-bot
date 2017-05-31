@@ -34,20 +34,20 @@ var quotes = new MarkovChain('Hello world', normFn);
 
 T.get('statuses/user_timeline', params, function(err, data, response) {
   if(!err){
-//    console.log(data.length);
-//    console.log(data);
+  //  console.log(data.length);
+  //  console.log(data);
     for(var i in data){
       quotes.parse(data[i].text);
       // console.log(data[i].text);
     }
 
-    console.log(quotes.start(useUpperCase).end(stopAfter139Chars).process());
+    // console.log(quotes.start(useUpperCase).end(stopAfter139Chars).process());
 
-    // T.post('statuses/update', {status: quotes.start(useUpperCase).end(stopAfter139Chars).process() + '.'},  function(error, tweet, response) {
-    //   if(error) throw error;
-    //   console.log(tweet);  // Tweet body. 
-    //   console.log(response);  // Raw response object. 
-    // });
+    T.post('statuses/update', {status: quotes.start(useUpperCase).end(stopAfter139Chars).process() + '.'},  function(error, tweet, response) {
+      if(error) throw error;
+      console.log(tweet);  // Tweet body. 
+      console.log(response);  // Raw response object. 
+    });
 } else {
     console.log(err);
   }
