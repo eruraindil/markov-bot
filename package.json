@@ -1,0 +1,20 @@
+{
+  "name": "markov-bot",
+  "version": "1.0.0",
+  "description": "I'm a bot Markoving @eruraindil's tweets.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eruraindil/markov-bot.git"
+  },
+  "author": "Matthew Roberts",
+  "license": "MIT",
+  "homepage": "https://github.com/eruraindil/markov-bot",
+  "dependencies": {
+    "markovchain": "^1.0.2",
+    "twitter": "^1.7.0"
+  }
+}
