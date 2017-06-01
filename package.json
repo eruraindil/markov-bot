@@ -1,6 +1,6 @@
 {
   "name": "markov-bot",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "I'm a bot Markoving @eruraindil's tweets.",
   "main": "app.js",
   "scripts": {
