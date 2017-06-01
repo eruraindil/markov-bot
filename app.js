@@ -40,7 +40,7 @@ try {
   
   var tweetText = quotes.start(useUpperCase).end(stopAfter139Chars).process() + '.';
 
-  if(!process.env.IS_DEV) {
+  if(process.env.IS_DEV == 0) {
     T.post('statuses/update', {status: tweetText},  function(error, tweet, response) {
       if(error) throw error;
     });

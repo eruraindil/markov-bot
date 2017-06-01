@@ -61,7 +61,7 @@ function getMaxHistory (data) {
     var keys = Object.keys(tweets);
     var len = keys.length;
 
-    if(process.env.IS_DEV) console.log(tweets);
+    if(process.env.IS_DEV == 1) console.log(tweets);
     console.log(len);
 
     Jsonfile.writeFileSync('./tweets.json', tweets);
