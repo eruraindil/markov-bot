@@ -4,7 +4,7 @@
   "description": "I'm a bot Markoving @eruraindil's tweets.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node genTweets.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,6 +15,8 @@
   "license": "MIT",
   "homepage": "https://github.com/eruraindil/markov-bot",
   "dependencies": {
+    "bluebird": "^3.5.0",
+    "jsonfile": "^3.0.0",
     "markovchain": "^1.0.2",
     "twitter": "^1.7.0"
   }

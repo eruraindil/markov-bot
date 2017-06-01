@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# tweet list json. will be pulled automatically on start.
+tweets.json
